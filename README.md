@@ -2,6 +2,24 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Just an interview task in which I have to do the following:  
+Make a web page in React which has 3 buttons. 
+All buttons open up a modal dialog box in the center of screen.   
+
+Button1 should open the dialog with 2 dummy text fields,  
+Button2 should open the dialog with 1 dummy text field and 1 combo box,
+Button3 should open the dialog with 10 fields and should be scrollable,
+
+All dialog boxes should have OK and Cancel button at bottom which are fixed. They should not scroll if content is large, only the content shld scroll.
+
+Dialog box title should show which button opened it (the button text)
+
+All text fields and button are dummy and dialog box ok/cancel buttons should close the dialog
+
+Make generic components and reuse code as much as possible
+
+Use tailwind for alignments,
+
 ## Available Scripts
 
 In the project directory, you can run:
