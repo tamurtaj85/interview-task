@@ -1,17 +1,18 @@
 import './App.css';
 import {ModalButtonWrapper} from './components';
+import {Button1Form, Button2Form, Button3Form} from './forms';
 
 function App() {
   return (
     <div className="App my-8">
       <ModalButtonWrapper buttonText={'Button 1'}>
-        Modal Body
+        <Button1Form />
       </ModalButtonWrapper>
       <ModalButtonWrapper buttonText={'Button 2'}>
-        Modal Body
+        <Button2Form />
       </ModalButtonWrapper>
       <ModalButtonWrapper buttonText={'Button 3'}>
-        Modal Body
+        <Button3Form />
       </ModalButtonWrapper>
     </div>
   );

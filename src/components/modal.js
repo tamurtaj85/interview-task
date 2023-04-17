@@ -16,9 +16,9 @@ export const ModalWrapper = ({visible, title, onClose, onSubmit, ...rest}) => {
               <div className="px-4 justify-self-start">
                 {title || 'Modal Wrapper'}
               </div>
-              <div className="px-4  justify-self-end">
+              <div className="px-2  justify-self-end">
                 <ButtonWrapper
-                  className={'bg-inherit text-gray-500'}
+                  className={'bg-inherit text-black'}
                   onClick={onClose}
                 >
                   x
@@ -26,13 +26,13 @@ export const ModalWrapper = ({visible, title, onClose, onSubmit, ...rest}) => {
               </div>
             </div>
             {/* Body Section */}
-            <div className="max-h-[500px] h-full overflow-y-auto">
+            <div className="max-h-[20rem] px-4 h-full overflow-y-auto">
               {rest?.children}
             </div>
             {/* Footer Section */}
-            <div className="h-[50px] border-t-2 flex justify-end items-center">
+            <div className="h-[3rem] px-2 border-t-2 flex justify-end items-center">
               <ButtonWrapper
-                className={'bg-inherit text-gray-500 border'}
+                className={'bg-transparent text-black border'}
                 onClick={onClose}
               >
                 Cancel
@@ -76,7 +76,7 @@ export const ModalButtonWrapper = ({
       </ButtonWrapper>
       <ModalWrapper
         visible={visible}
-        title={modalHeader || buttonText}
+        title={modalHeader || buttonText + ' modal'}
         onClose={handleOnClickCloseModal}
         onSubmit={handleOnClickSubmit}
       >
